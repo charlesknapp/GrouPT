@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GroupPT Extension</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="slider">
+    <div class="slide" id="welcomeSlide">
+      Welcome to GroupPT
+    </div>
+    <div class="slide" id="apiKeyEntry">
+      <p>Enter your OpenAI API Key:</p>
+      <input type="text" id="apiKey" placeholder="API Key">
+      <button id="saveApiKeyButton">Save</button>
+    </div>
+    <div class="slide" id="settings" style="display: none;">
+      <p>Extension Settings:</p>
+      <label>
+        <input type="checkbox" id="toggleExtension" /> Enable Tab Grouping
+      </label>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
